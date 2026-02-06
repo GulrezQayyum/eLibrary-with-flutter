@@ -1,8 +1,12 @@
-# Treat all Dart files as Dart
 *.dart linguist-language=Dart
 
-# Treat any leftover C++ files as plain text (so they don’t affect stats)
+*.c linguist-language=Text
 *.cpp linguist-language=Text
 *.h linguist-language=Text
 *.hpp linguist-language=Text
-*.c linguist-language=Text
+CMakeLists.txt linguist-language=Text
+
+android/** linguist-vendored
+linux/** linguist-vendored
+windows/** linguist-vendored
+macos/** linguist-vendored
